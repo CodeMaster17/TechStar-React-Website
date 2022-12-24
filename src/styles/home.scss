@@ -11,7 +11,7 @@
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         width : 100%;
         height : 100%;
         padding : 2rem;
@@ -35,7 +35,9 @@
         position: absolute;
         background: no-repeat left url("../assets/1.png");
         filter : blur(1px);
-        border-radius: 0 0 200px 200px;
+        filter: brightness(40%);
+            // filter: grayscale(70%);
+        // border-radius: 0 0 200px 200px;
     }
 }
 
@@ -94,20 +96,19 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                padding: 2rem;
+                padding: 1rem;
 
                 h1{
                     text-transform: uppercase;
                     border-bottom: 2px solid $dark;
-                    padding: 0.5rem;
-
+                    // padding: 0.5rem;
                     width: 15rem;
                     color : $dark;
-
                 }
                 p{
 
                     padding: 5rem;
+                    padding-top: 3rem;
                     letter-spacing: lpx;
                     word-spacing: 5px;
                     line-height: 170%;
@@ -115,4 +116,80 @@
                 }
 
             }
+}
+
+.home4{
+
+    width: 100%;
+        height: 120vh;
+        background-color: $second;
+        // margin-top: -200px;
+        display: flex;
+        justify-content: flex-end;
+        .outerhome4Container{
+            width: 80%;
+            // margin-top: 20vh;
+            height: 100vh;
+            background-color: $first;
+            border-radius: 200px 0px 0px 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            // background-color: red;
+            h1{
+                    text-transform: uppercase;
+                        border-bottom: 2px solid $dark;
+                        // padding: 0.5rem;
+                        // width: 15rem;
+                        color: $dark;
+            }
+    }
+    .innerContainer{
+        width: 100%;
+            // margin-top: 20vh;
+            height: 90%;
+            background-color: $first;
+            border-radius: 200px 0px 0px 200px;
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                // padding: 1rem;
+                // background-color: green;
+    }
+    .icoContainer{
+        width: 100%;
+        height:90%;
+        background-color: $first;
+            border-radius: 200px 0px 0px 200px;
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    // padding: 1rem;
+    background-color: yellow;
+    }
+    .googleLogo, .Logo{
+        width: 4rem;
+        height : 4rem;
+       
+    }
+    .googleLogo{
+        animation: imgDown 0.7s linear  infinite alternate ;
+    }
+    .Logo{
+        animation: logoUp 0.7s linear  infinite alternate ;
+    }
+}
+@keyframes imgDown {
+    to {
+        transform: translateY(-10px);
+    }
+}
+@keyframes logoUp {
+    to {
+        transform: translateY(10px);
+    }
 }

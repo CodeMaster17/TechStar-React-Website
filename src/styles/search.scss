@@ -1,0 +1,29 @@
+@import "colors.scss";
+
+.displayNoClass{
+    display: none;
+}
+
+.searchOuterContainer{
+    margin-top: 2rem;
+    width :60%;
+    // background-color: red;
+}
+
+.dropdownList{
+    // display: block;
+    background: white;
+    text-align: left;
+    width: 80%;
+}
+.searchContainer{
+    width: 100%;
+}
+.searchContainer input{
+    width: 80%;
+    height: 2rem;
+}
+.searchBtn{
+    width: 20%;
+    height: 2rem;
+}
